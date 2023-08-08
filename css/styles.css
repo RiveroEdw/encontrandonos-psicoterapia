@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --claro: #0c928b;
+    --oscuro: #18645c;
+    --secundario: #b34488;
+}
+
+body {
+    background-color: #e5e5e5;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+.navbar img {
+    max-height: 100px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--secundario);
+}
+
+.navbar i {
+    font-size: 2.5em;
+    margin-right: 10px;
+    color: var(--claro);
+}
+
+.navbar ul {
+    display: none;
+    position: absolute;
+    top: 100px;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    list-style: none;
+    background-color: #e5e5e5;
+    border-bottom: 2px solid var(--secundario);
+    z-index: 1;
+    padding: .5em;
+}
+
+.navbar a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #202020;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.navbar li {
+    padding: .25em;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked ~ ul{
+    display: flex;
+}
+
+/* PORTADA */
+
+.portada {
+    background-image: url(../assets/images/fotos/fondo.jpg);
+    background-size: cover;
+    background-position: 50%;
+    height: calc(100vh - 100px);
+    z-index: 1050;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    height: calc(100vh - 100px);
+}
+
+.titulo h1 {
+    color: var(--secundario);
+    text-transform: uppercase;
+    font-size: 1.9em;
+    margin-bottom: .5em;
+    text-shadow: 0 2px 0 #802d60;
+}
+
+.titulo h3 {
+    color: #e5e5e5;
+    background-color: var(--claro);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* SOBRE MÍ */
+
+.sobre-mi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-mi h2 {
+    font-size: 1.8em;
+    color: var(--claro);
+    margin: 3em 0 1em;
+}
+
+.sobre-mi p {
+    width: 280px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 54.4px;
+}
+
+.sobre-mi span {
+    color: var(--secundario);
+    font-weight: 600;
+}
+
+.sobre-mi div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-mi img {
+    width: 180px;
+    border-radius: 100px;
+    box-shadow: 0 0 0 5px var(--claro);
+    margin-bottom: 28.8px;
+}
+
+/* TERAPIAS */
+
+.terapias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.terapias img {
+    width: 150px;
+    height: 150px;
+    margin: 1em;
+}
+
+.terapias h1 {
+    font-size: 2em;
+    margin: 1em 0;
+    color: var(--secundario);
+}
+
+.terapias h4 {
+    color: #e5e5e5;
+}
+
+.terapias article {
+    margin: 1em;
+    background-color: var(--claro);
+    border: 2px solid var(--secundario);
+    width: 290px;
+    height: 290px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.terapias p {
+    display: none;
+    color: var(--oscuro);
+}
